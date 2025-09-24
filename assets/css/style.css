@@ -14938,8 +14938,66 @@ a {
   }
 }
 
+.test-container{
+  width: 100%;
+  position: relative;
+  height: 650px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+}
 
 
+.cardz{
+  position: sticky;
+  top: 0;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid color-mix(in srgb, #333, #fff 20% );
+  background-color:  #051937;
+  border-radius: 3px;
+  /* color: #fff; */
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 -5px 10px #000, 0 5px 10px #000;
+}
+
+.cardz:nth-child(2){
+  top: 20px;
+}
+
+.cardz:nth-child(3){
+  top: 40px;
+}
+
+.cardz:nth-child(4){
+  top: 20px;
+}
+
+.test-role{
+  padding-bottom: 15px;
+  color: #00B876;
+}
+
+.caard{
+  background-color: #051937;
+  height: 300px;
+}
+
+.card-icon{
+  padding: 20px;
+}
+
+.green{
+  color: #00B876 !important;
+}
+
+
+.forward{
+  width: 40%;
+  height: 40%;
+}
 
 .blue{
   color: #0D51B2 !important;
@@ -14974,7 +15032,7 @@ a {
 .bg-two{
   background-image:
     linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.80)), /* top->bottom haze */
-    url('../images/about/13.jpg');
+    url('../images/about/19.jpg');
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
