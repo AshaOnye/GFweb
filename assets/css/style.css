@@ -14515,7 +14515,7 @@ xclip
   padding: 0;
   margin: 0;
   position: relative;
-  margin-bottom: -12px;
+  /* margin-bottom: -12px; */
 }
 /* .nav-area-center nav ul li::after {
   position: absolute;
@@ -14588,10 +14588,9 @@ xclip
   box-shadow: 0 36px 35px rgba(0, 0, 0, 0.08);
 }
 .has-dropdown .submenu li.lim {
-  margin-right: 0;
+  margin: 0;
   padding: 0 0;
   display: block;
-  margin-bottom: 0;
 }
 .has-dropdown .submenu li.lim::after {
   content: "" !important;
@@ -14603,13 +14602,13 @@ xclip
 .has-dropdown .submenu li.lim a {
   display: block;
   padding: 12px 35px 12px 20px !important;
-  border-bottom: 1px solid #ebebeb;
   color: #1F1F25 !important;
   transition: 0.3s;
+  margin: 0;
 }
 .has-dropdown .submenu li.lim a.last {
   border-bottom: none;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0;
 }
 .has-dropdown .submenu li.lim:hover::after {
   color: #fff;
@@ -19442,26 +19441,58 @@ a {
   }
 }
 
-.single-working-prcess-one {
-  position: relative;
-  height: 100%;
-}
-.single-working-prcess-one.two .inner::after {
-  background-image: url(../images/why-choose/06.jpg);
-}
-.single-working-prcess-one.three .inner::after {
-  background-image: url(../images/why-choose/07.jpg);
-}
-.single-working-prcess-one.four .inner::after {
-  background-image: url(../images/why-choose/08.jpg);
-}
+/* base .inner */
 .single-working-prcess-one .inner {
   height: 100%;
   padding: 30px;
-  background: #F6F6F6;
   position: relative;
-  z-index: 1;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  /* remove background: #F6F6F6; if present */
+  color: #fff; /* adjust if text needs to be visible on dark haze */
 }
+
+.coming-soon{
+  font-weight: bolder;
+  color: #000;
+}
+
+
+.faqz{
+  width: 70%;
+  height: 70%;
+}
+
+/* per-instance backgrounds with dark haze on top */
+
+.single-working-prcess-one .inner {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.45)),
+    url('../images/why-choose/05.jpg');
+}
+
+
+.single-working-prcess-one.two .inner {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.45)),
+    url('../images/why-choose/06.jpg');
+}
+
+.single-working-prcess-one.three .inner {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.45)),
+    url('../images/why-choose/07.jpg');
+}
+
+.single-working-prcess-one.four .inner {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.45)),
+    url('../images/why-choose/08.jpg');
+}
+
+
+
 @media only screen and (max-width: 575px) {
   .single-working-prcess-one .inner {
     padding: 20px;
@@ -19507,6 +19538,7 @@ a {
   border-radius: 50%;
   transition: 0.3s;
   z-index: 2;
+  display: none;
 }
 @media only screen and (max-width: 1199px) {
   .single-working-prcess-one::after {
@@ -19527,6 +19559,7 @@ a {
   opacity: 0;
   transition: 0.3s;
   z-index: 2;
+  display: none;
 }
 @media only screen and (max-width: 1199px) {
   .single-working-prcess-one::before {
