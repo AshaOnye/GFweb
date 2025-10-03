@@ -14854,8 +14854,48 @@ a {
   display: none;
 }
 
+/* .ctext{
+  fill: #0D51B2;
+  transform-origin: 50% 50%;
+  animation: rotate 15s linear infinite;
+}
+
+#curve{
+  fill: transparent;
+  
+}
+
+@keyframes rotate {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+} */
+
+
+.spin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#curve {
+  fill: none; /* Make path invisible */
+}
+
+.spin-text {
+  font-size: 15px;
+  fill: #0D51B2;
+}
+
 .title-two{
   color: #0D51B2;
+}
+
+.bg-white{
+  background: #fff;
 }
 
 .bg-light {
