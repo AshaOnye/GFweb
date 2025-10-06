@@ -14854,6 +14854,46 @@ a {
   display: none;
 }
 
+.fast-text{
+  display: inline;
+}
+
+@media (min-width: 992px) {
+  .fast-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .desktop-break {
+    display: block; 
+  }
+}
+
+@media (max-width: 991px) {
+  .fast-text {
+    display: inline; 
+  }
+  .desktop-break {
+    display: inline;
+  }
+}
+
+@media (max-width: 767px) {
+  .fast-gif {
+    display: none;
+  }
+}
+
+
+.date-text{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
 /* .ctext{
   fill: #0D51B2;
   transform-origin: 50% 50%;
