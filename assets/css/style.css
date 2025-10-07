@@ -14198,7 +14198,7 @@ xclip
 @media (max-width: 767.98px) {
   .logo-one img {
     max-height: 64px;   /* smaller height on phones */
-    margin: 0 auto;     /* center if needed */
+    margin: 0 ;    /* center if needed */
     display: block;
   }
 }
